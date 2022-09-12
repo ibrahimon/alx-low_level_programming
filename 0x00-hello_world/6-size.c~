@@ -2,8 +2,8 @@
 
 /**
  * main: print the size of various types on the computer
- * Descreption: using printf
- * Return: 0
+ * descreption: using printf
+ * return 0
  */
 
 int main(void)
