@@ -10,10 +10,18 @@ int main(void)
 {
 	char x = '0';
 
-	while (x <= '15')
+	while (x <= '9')
 	{
 		putchar(x);
 		x++;
+	}
+
+	char c = 'a';
+
+	while (c <= 'f')
+	{
+		putchar(c);
+		c++;
 	}
 
 	putchar('\n');
