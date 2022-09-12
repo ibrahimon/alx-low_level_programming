@@ -29,7 +29,7 @@ int main(void)
 					}
 					else if (n<0)
 					{
-						printf("the %d is negative",n);
+						printf("%d is negative",n);
 					}
 					else 
 						printf("%d is zero\n", n);
