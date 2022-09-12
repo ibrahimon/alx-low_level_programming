@@ -11,21 +11,21 @@ int main(void)
 {
 	char x = 'a';
 
-	while (c <= 'z')
+	while (x <= 'z')
 	{
-		putchar(c);
-		c++;
+		putchar(x);
+		x++;
 	}
 
-	c = 'A';
+	x = 'A';
 	
-	while (c <= 'Z')
+	while (x <= 'Z')
 	{
-		putchar(c);
-		c++;
+		putchar(x);
+		x++;
 	}
 
 
-	putchar('\n);
+	putchar('\n');
 	return (0);
 }
