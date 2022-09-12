@@ -2,11 +2,15 @@
 
 #include <time.h>
 
-/* more headers goes there */
+#include <stdio.h>
 
+/**
+ * main - main block
+ * Description: Get a rondom number and print 
+ * if it is positive or negative or zero
+ * Return: 0
+ */
 
-
-/* betty style doc for function main goes there */
 
 int main(void)
 
