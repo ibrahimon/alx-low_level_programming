@@ -21,17 +21,15 @@ int main(void)
 				n = rand() - RAND_MAX / 2;
 					if (n >0)
 					{
-						printf("the %d is positive",n)
+						printf("%d is positive\n", n)
 					}
-					if (n==0)
-					{
-						printf("the %d is zero",n)
-					}
-					if (n<0)
+					else if (n<0)
 					{
 						printf("the %d is negative",n)
 					}
-					/* your code goes there */
+					else 
+						printf("%d is zero\n", n)
+					
 
 					return (0);
 
