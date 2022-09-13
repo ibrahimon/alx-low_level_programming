@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * main - main block
@@ -17,6 +17,6 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
