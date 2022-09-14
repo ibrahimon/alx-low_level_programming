@@ -20,7 +20,8 @@ void print_to_98(int n)
 			{
 				printf(", ");
 			}
-			printf("%d\n", 98);
+
+			printf("%d", i);
 		}
 	}
 	
