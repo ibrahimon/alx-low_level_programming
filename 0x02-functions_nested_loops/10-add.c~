@@ -6,7 +6,7 @@
  * @n1: The first int
  * @n2: The scond int
  * Return: 0
- */
+ * */
 
 int add(int n1, int n2)
 
