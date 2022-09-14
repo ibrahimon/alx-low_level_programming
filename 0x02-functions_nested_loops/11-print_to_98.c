@@ -41,6 +41,6 @@ void print_to_98(int n)
 		
 	}
 
-	printchar('\n');
+	putchar('\n');
 
 }
