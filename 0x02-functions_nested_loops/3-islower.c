@@ -3,6 +3,7 @@
 
 /**
  * _islower - check for lowercase
+ *
  * @c: contains value to be compared
  * Description: function that checks for lowercase character. 
  * Return: 0
