@@ -1,9 +1,9 @@
 #include "main.h"
+#include <limits.h>
 #include <stdio.h>
 
 /**
  * print_numbers - prints numbers from 0 to 9 followed by new line
- *
  * Return: 0 to 9 
  */
 
