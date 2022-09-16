@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * print_line: draws a stright line 
+ * print_line -  draws a stright line
  * @n: number of times draw _
- * Return: line
+ * Return: lines
  */
 
 void print_line(int n)
