@@ -20,7 +20,7 @@ void print_traingle(int size)
 
 		for (i = 1; i <= size; j++)
 		{
-			for (j = i; j < size; i++)
+			for (j = i; j < size; j++)
 			{
 				_putchar(' ');
 			}
