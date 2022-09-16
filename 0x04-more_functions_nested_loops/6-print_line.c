@@ -9,21 +9,20 @@
 
 void print_line(int n)
 {
-	int i;
-
-	if (n > 0)
+	if (n <= 0)
 	{
-		for (i = 0; i < n; i++)
-		{
-			_putchar('_');
-		}
-
 		_putchar('\n');
 	}
 
 	else
 	{
-		_putchar('\n');
-	}
+		int i;
 
+		for (i = 1; i <= n; i++)
+		{
+			_putchar('_');
+		}
+		_putchar('\n');
+
+	}
 }
