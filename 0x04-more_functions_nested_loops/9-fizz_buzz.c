@@ -4,32 +4,41 @@
 /**
  * main - main block
  *
- * Return: 0 to 100
+ * Return: 0
  */
 
 int main(void)
 {
 	int i;
 
-	for (i = 0; i <= 100; i++)
+	for (i = 1; i <= 100; i++)
 	{
-		if (i == 3 && i % 3 == 0)
+		if (i % 3 == 0 && i % 5 != 0)
 		{
-			char z[4] = "Fizz";
-			printf("%s", z);
+			printf(" Fizz");
 		}
 
-		else if (i == 5 && i % 5 == 0)
+		else if (i % 5 == 0 && i % 3 != 0)
 		{
-			char x[4] = "Buzz";
-			printf("%s", x);
+			printf(" Buzz");
 		}
 
 		else if (i % 15 == 0)
 		{
-			char y[8] = "FizzBuzz";
-			printf("%s", y);
+			printf(" FizzBuzz");
+		}
+
+		else if (i == 1);
+		{
+			printf("%d", i);
+		}
+
+		else
+		{
+			printf(" %d", i);
 		}
 	}
+	printf("\n");
 
+	return (0);
 }
