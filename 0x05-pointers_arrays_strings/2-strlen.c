@@ -4,13 +4,16 @@
 /**
  * _strlen - returns the lens of a string
  * @s: the string
- * Return: 0
+ * Return: string length
  */
 
 int _strlen(char *s)
 {
-	*s;
+	int u = 0;
+	while (s[u] = '\0')
+	{
+		u++;
+	}
 
-	u = *s;
-	printf("%d", strlen(u));
+	return (u);
 }
