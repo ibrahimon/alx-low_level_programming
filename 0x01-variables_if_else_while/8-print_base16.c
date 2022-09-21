@@ -2,8 +2,8 @@
 
 /**
  * main - main block
- * Description: Printing numbers of base 16
- * Return 0
+ * description : Printing numbers of base 16
+ * Return: void
  */
 
 int main(void)
@@ -17,7 +17,7 @@ int main(void)
 		if (x == '9')
 		{
 			x = 'a';
-			for (;x <= 'f' ; x++)
+			for (; x <= 'f' ; x++)
 			{
 				putchar(x);
 			}
