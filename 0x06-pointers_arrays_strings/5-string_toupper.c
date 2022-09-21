@@ -18,4 +18,6 @@ char *string_toupper(char *s)
 		}
 		count++;
 	}
+
+	return (s);
 }
