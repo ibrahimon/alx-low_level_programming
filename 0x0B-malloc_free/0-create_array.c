@@ -5,8 +5,8 @@
 /**
  * create_array - create an array of chars
  * @size: the size of the array
- * @char: a char
- * Return: char
+ * @c: a char
+ * Return: pointer
  */
 
 char *create_array(unsigned int size, char c)
@@ -16,7 +16,7 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 	{
-		return (NULL)
+		return (NULL);
 	}
 
 	buffer = (char *) malloc(size * sizeof(c));
@@ -38,4 +38,3 @@ char *create_array(unsigned int size, char c)
 		return (buffer);
 	}
 }
-
