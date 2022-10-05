@@ -15,8 +15,8 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 	{
 		printf("Error\n");
+		return (1);
 	}
-	return (1);
 
 	else
 	{
@@ -24,7 +24,6 @@ int main(int argc, char *argv[])
 		b = atoi(argv[2]);
 		sum = a * b;
 		printf("%d\n", sum);
+		return (0);
 	}
-
-	return (0);
 }
