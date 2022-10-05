@@ -5,20 +5,14 @@
  * main - main
  * @argc: number of arguments
  * @argv: array of arguments
- * Return: 0
+ * Return: 0 if true
  */
 
 int main(int argc, char *argv[])
 {
 	int sum, a, b;
 
-	if (argc != 3)
-	{
-		printf("Error\n");
-		return (1);
-	}
-
-	else
+	if (argc == 3)
 	{
 		a = atoi(argv[1]);
 		b = atoi(argv[2]);
@@ -26,4 +20,6 @@ int main(int argc, char *argv[])
 		printf("%d\n", sum);
 		return (0);
 	}
+	printf("Error\n");
+	return (1);
 }
