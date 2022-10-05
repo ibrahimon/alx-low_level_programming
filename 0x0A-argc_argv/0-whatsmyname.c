@@ -11,12 +11,6 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
-
-	for (i = 1; i < argc; i++)
-	{
-		_putchar(argv[1]);
-	}
-	
+	_putchar("%s\n", argv[1]);
 	return (0);
 }
