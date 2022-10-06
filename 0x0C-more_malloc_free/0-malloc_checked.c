@@ -11,9 +11,14 @@
 
 void *malloc_checked(unsigned int b)
 {
-	int *ptr;
-	ptr = malloc(sizeof(b));
-	_putchar("%d\0", ptr);
+	void *ptr;
+	ptr = malloc(b);
+	if (p == NULL)
+	{
+		exit(98);
+	}
+
+	return (p);
 }
 
 
