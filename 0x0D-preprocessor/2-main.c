@@ -7,7 +7,6 @@
  * Return: 0 on success
  */
 
-#define __FILE__
 
 int main(void)
 {
