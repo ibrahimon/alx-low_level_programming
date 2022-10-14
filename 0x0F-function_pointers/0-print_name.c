@@ -4,7 +4,7 @@
 /**
  * print_name - prints a name
  * @name: the name
- * 
+ * @f: pointer to func
  * Return: void
  */
 
