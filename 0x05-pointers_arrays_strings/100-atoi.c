@@ -24,7 +24,7 @@ int _atoi(char *s)
 	for (; s[i] != '\0'; ++i)
 	{
 		if (s[i] < '0' || s[i] > '9')
-			return (0);
+			continue;
 		res = res * 10 + s[i] - '0';
 	}
 	return (sign * res);
