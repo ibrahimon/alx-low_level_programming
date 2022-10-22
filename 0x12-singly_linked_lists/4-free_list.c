@@ -13,8 +13,6 @@ void free_list(list_t *head)
 {
 	list_t *node;
 
-	node = malloc(sizeof(list_t));
-
 	while ((node = head) != NULL)
 	{
 		head = head->next;
