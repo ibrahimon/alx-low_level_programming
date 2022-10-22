@@ -15,7 +15,7 @@ void free_list(list_t *head)
 
 	node = malloc(sizeof(list_t));
 
-	while ((nod = head) != NULL)
+	while ((node = head) != NULL)
 	{
 		head = head->next;
 		free(node->str);
