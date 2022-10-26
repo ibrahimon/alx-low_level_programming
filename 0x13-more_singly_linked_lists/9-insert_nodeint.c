@@ -27,16 +27,16 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		return (toadd);
 	}
 
-	while (ptr)
+	for (count = 0; ptr && count < idx; count++)
 	{
-		if (count < idx)
+		if (count == idx - 1)
 		{
-			ptr = ptr->next;
-			count++;
+			toadd->next = ptr->next;
+			ptr->next = toadd;
+			return (toadd);
 		}
-		toadd->next = ptr->next;
-		ptr->next = toadd;
-		return (toadd ? toadd : ptr->next);
+		else
+			ptr = ptr->next;
 	}
 	return (NULL);
 }
