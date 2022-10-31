@@ -18,14 +18,9 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (text_content != NULL)
 	{
 		for (len = 0; text_content[len];)
-		{
 			len++;
-			if (text_content[len] == '\0')
-			{
-				o = open(filename, O_RDONLY | O_APPEND);
-				w = write(o, text_content, len);
-			}
-		}
+		o = open(filename, O_RDONLY | O_APPEND);
+		w = write(o, text_content, len);
 	}
 
 	if (o == -1 || w == -1)
