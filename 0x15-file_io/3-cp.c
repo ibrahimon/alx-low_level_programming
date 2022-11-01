@@ -7,29 +7,29 @@
  * Return: the actual number of letters
  */
 
-int main(int argc, char **argv[])
+int main(int argc, char **argv)
 {
-	int f_in, f_out;
+	int f1, f2;
 	int i;
 	char ch[1024];
 
 	if (argc != 3)
 	{
-		dprint(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	f1 = open(argv[1], O_RDONLY);
 	if (f1 == -1)
 	{
-		dprint(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	f2 = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	while ((i = read(f1, ch, 1024)) > 0)
 	{
-		if (write(f2, buf, i) != i || f2 == -1)
+		if (write(f2, ch, i) != i || f2 == -1)
 		{
-			printf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
 	}
